@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SOUL SIGNAL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>SOUL SIGNAL</h1>
+
+    <h2>Personal Contact</h2>
+    <input type="tel"
+           id="personalNumber"
+           placeholder="Enter Personal Number">
+
+    <h2>SOS Contact 1</h2>
+    <input type="tel"
+           id="sos1"
+           placeholder="Enter SOS Contact 1">
+
+    <h2>SOS Contact 2</h2>
+    <input type="tel"
+           id="sos2"
+           placeholder="Enter SOS Contact 2">
+
+    <h2>SOS Contact 3</h2>
+    <input type="tel"
+           id="sos3"
+           placeholder="Enter SOS Contact 3">
+
+    <h2>Wi-Fi Name</h2>
+    <input type="text"
+           id="ssid"
+           placeholder="Enter Wi-Fi Name">
+
+    <h2>Wi-Fi Password</h2>
+    <input type="password"
+           id="password"
+           placeholder="Enter Wi-Fi Password">
+
+    <button onclick="connectDevice()">
+        Connect ESP32
+    </button>
+
+    <button onclick="getLocation()">
+        Allow Location
+    </button>
+
+    <button onclick="saveData()">
+        Save Settings
+    </button>
+
+    <div id="status">
+        Waiting...
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
